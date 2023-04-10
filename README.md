@@ -1,4 +1,4 @@
-# mysqlDB_automatic_backup
+# mysqlDB_automatic_backup 🐬 🐧
 **Generate scheduled backups of a MySQL database locally and sends a copy of the backup to a remote computer.**
 <br>
 <br>
@@ -19,4 +19,3 @@
 4. Edit the user's cron with the command `crontab -e`
 5. Paste this line in the text editor `0 5 * * * sh /file/path/import_backup.sh`, overriding the path to the `import_backup.sh` file. Save the changes and close the file.
 6. To ensure that the task was scheduled correctly, run the following command `crontab -l`. You should see the line that we added in the previous step. The scheduled task will run every day at 5:00 a.m.
-🐧
