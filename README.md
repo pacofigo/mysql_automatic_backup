@@ -19,4 +19,4 @@
 4. Edit the user's cron with the command `crontab -e`
 5. Paste this line in the text editor `0 5 * * * sh /file/path/import_backup.sh`, overriding the path to the `import_backup.sh` file. Save the changes and close the file.
 6. To ensure that the task was scheduled correctly, run the following command `crontab -l`. You should see the line that we added in the previous step. The scheduled task will run every day at 5:00 a.m.
-![TUX](https://www.flaticon.es/icono-gratis/linux_6124995?term=linux&page=1&position=1&origin=search&related_id=6124995)
+![TUX](https://cdn-icons-png.flaticon.com/512/6124/6124995.png)
