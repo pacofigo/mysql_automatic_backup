@@ -9,4 +9,6 @@
 2. Copy the `local_backup.sh` file to the home of the user. Remember to write correctly the routes that you want your backups to have.
 3. Give the execute permission to the file `local_backup.sh` with the following command: `chmod +x local_backup.sh`
 ### Automatic backup scheduling
-5. 
+1. Edit the user's cron with the command `crontab -e` 
+2. Paste this line in the text editor `0 4 * * * sh /file/path/local_backup.sh`, overriding the path to the `local_backup.sh` file. Save the changes and close the file.
+3. To ensure that the task was scheduled correctly, run the following command `crontab -l`. You should see the line that we added in the previous step.
