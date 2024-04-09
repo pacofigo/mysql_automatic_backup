@@ -5,7 +5,7 @@
 <br>
 ## Generate the backup locally
 ### Preparation of the necessary local files
-1. Copy the `.mycnf` file to the home of the user who will run the backups. Remember to put in this file the username and password of the mysql user with the necessary permissions to execute the backup.
+1. Copy the `.mycnf` file to the home of the user who will run the backups if the backups will only be run by a single user. Remember to put in this file the username, password and host of the mysql user and server with the necessary permissions to run the backup or you can edit the `mysqld.cnf` file that is located within the MySQL `/etc` directory and put the information in it if the Backups will be executed by any user on the system.
 2. Copy the `local_backup.sh` file to the home of the user. Remember to write correctly the routes that you want your backups to have.
 3. Give the execute permission to the file `local_backup.sh` with the following command: `chmod +x local_backup.sh`
 ### Automatic local backup scheduling
