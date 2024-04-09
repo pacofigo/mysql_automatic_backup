@@ -7,10 +7,10 @@ local_path="/local/path"
 date=$(date +"%d-%b-%Y")
 
 #Generate the backup
-mysqldump database_name > $local_path/database_nameBackup_$date.sql
+mysqldump -h host_name --databases database_name > $local_path/database_nameBackup_$date.sql
 
 #Compress the backup
-tar -czvf $local_path/database_nameBackup_$date.sql.tar.gz $local_path/database_nameBackup_$date.sql
+tar -czvf $local_path/database_nameBackup_$date.tar.gz --absolute-names $local_path/database_nameBackup_$date.sql
 
 #Delete the SQL file
 rm $local_path/database_nameBackup_$date.sql
